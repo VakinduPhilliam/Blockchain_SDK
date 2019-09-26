@@ -1,0 +1,32 @@
+{
+	"plugins": ["chai-expect"],
+	"env": {
+		"mocha": true
+	},
+	"globals": {
+		"_": true,
+		"__testContext": true,
+		"expect": true,
+		"gc": true,
+		"sinonSandbox": true
+	},
+	"rules": {
+		"func-names": "off",
+		"no-plusplus": "off",
+		"no-new": "off",
+		"no-template-curly-in-string": "off",
+		"global-require": "off",
+		"prefer-destructuring": "off",
+		"arrow-body-style": "off",
+		"no-unused-expressions": "off",
+		"chai-expect/missing-assertion": "error",
+		"chai-expect/no-inner-compare": "error",
+		"space-before-function-paren": "off",
+		"import/no-extraneous-dependencies": [
+			"error",
+			{
+				"devDependencies": ["./**"]
+			}
+		]
+	}
+}
